@@ -28,7 +28,9 @@ myImage.onclick = function(){
 function setUserName(){
 	let myName = prompt('Please enter your name:');
 	if(!myName) {
-		setUserName();
+		//setUserName();
+		myName = '亲爱的朋友';
+		myHeading.innerHTML = 'Welcome to my page, ' + myName;
 	} 
 	else {
 		localStorage.setItem('name', myName);
